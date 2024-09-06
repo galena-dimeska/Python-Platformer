@@ -5,25 +5,25 @@ from pygame import mixer
 import pickle
 from os import path
 
-# Initialize Pygame and Mixer
+#initialize pygame and mixer
 pygame.mixer.pre_init(44100, -16, 2, 512)
 mixer.init()
 pygame.init()
 clock = pygame.time.Clock()
 
-# Constants and Game Settings
+#constants and game settings
 fps = 60
 screen_width = 800
 screen_height = 800
 tile_size = 40
 max_levels = 7
 
-# Colors
+#colors
 white = (255, 255, 255)
 red = (200, 0, 0)
 black = (0, 0, 0)
 
-# Game State Variables
+#game State Variables
 game_over = 0  # 0: running, 1: level complete, -1: player died
 main_menu = True
 level = 1
